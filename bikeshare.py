@@ -116,7 +116,7 @@ def station_sts(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def trip_duration_sts(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -190,7 +190,7 @@ def main():
         try:
             time_sts(df)
             station_sts(df)
-            trip_duration_stats(df)
+            trip_duration_sts(df)
             user_stats(df)
         except IndexError:
             print("there is no info for the month you had select")
