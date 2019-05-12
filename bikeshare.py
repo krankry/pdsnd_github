@@ -92,7 +92,7 @@ def time_sts(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_sts(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -189,7 +189,7 @@ def main():
         df = load_data(city, month, day)
         try:
             time_sts(df)
-            station_stats(df)
+            station_sts(df)
             trip_duration_stats(df)
             user_stats(df)
         except IndexError:
