@@ -71,7 +71,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_sts(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -92,7 +92,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_sts(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -116,7 +116,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def trip_duration_sts(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -188,9 +188,9 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
         try:
-            time_stats(df)
-            station_stats(df)
-            trip_duration_stats(df)
+            time_sts(df)
+            station_sts(df)
+            trip_duration_sts(df)
             user_stats(df)
         except IndexError:
             print("there is no info for the month you had select")
